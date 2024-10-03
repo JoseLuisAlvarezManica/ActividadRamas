@@ -1,9 +1,102 @@
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+div {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilos para los inputs y botones */
+input[type="text"], input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Centrar el mensaje y cambiar el color del texto */
+#mensaje {
+  font-size: 18px;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Ocultar el título y el contenedor de los datos de la API hasta que se inicie sesión */
+#data-container, h1 {
+  display: none; /* Ocultamos hasta que se inicie sesión */
+}
+
+/* Estilos para el contenedor de datos de la API */
+#data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Estilos para los datos */
+#data-container div {
+  background-color: #e9e9e9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el footer */
 footer {
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(27, 27, 26);
-    color: white;
-    font-size: 1.2rem;
-    border-top: 2px solid #fff;
-  }
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  width: 100%; /* Hacemos que el footer abarque todo el ancho */
+  bottom: 0;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

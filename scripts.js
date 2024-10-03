@@ -3,26 +3,32 @@
 
     const datacontainer = document.getElementById('data-container');
 
-    function getData(){
-        fetch(apiURL).then(response =>{
-            if (!response.ok){
-                throw new Error('Problema de red:');
-            }
-            return response.json();
-        }).then(data => {
-            console.log(data);
-            const contenido = data.map(tarea => {
-                return`
-                    <div>
-                        <h4>${tarea.name}</h4>
-                    </div>
-                `
-            }).join('');
-            datacontainer.innerHTML = contenido;
-        }).catch(error =>{
-            console.error('Fetch error:',error)
-        })
+    function getData() {
+        fetch(apiURL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Problema de red:');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                const contenido = data.map(tarea => {
+                    return `
+                        <div>
+                            <h4>${tarea.name}</h4>
+                        </div>
+                    `;
+                }).join('');
+                datacontainer.innerHTML = contenido;
+                datacontainer.style.display = 'flex';  // Mostrar el contenedor de datos
+                document.querySelector('h1').style.display = 'block';  // Mostrar el título de los datos
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+            });
     }
+    
     function login() {
         let user = document.getElementById('username').value;
         let password = document.getElementById('password').value;
