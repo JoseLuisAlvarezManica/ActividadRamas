@@ -29,11 +29,9 @@
         
         // Verifica las credenciales
         if (user === "Moises" && password === "123") {
-            document.getElementById('contador').style.visibility = 'visible';
-            document.getElementById('mensaje').textContent = "";  // Limpia el mensaje de error
+            document.getElementById('mensaje').textContent = "Bienvenido";  // Limpia el mensaje de error
             getData();
         } else {
-            document.getElementById('mensaje').textContent = "¿Quién sos?";
-            document.getElementById('contador').style.visibility = 'hidden';  // Oculta el contador si las credenciales son incorrectas
+            document.getElementById('mensaje').textContent = "¿Quién sos?"
         }
     }
