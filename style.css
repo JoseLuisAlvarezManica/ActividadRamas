@@ -32,8 +32,8 @@ input[type="text"], input[type="password"] {
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ca56dc;
+  color: rgb(4, 4, 4);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #ff05ee;
 }
 
 /* Centrar el mensaje y cambiar el color del texto */
@@ -95,7 +95,7 @@ footer {
 }
 
 footer a {
-  color: #4CAF50;
+  color: #9b4caf;
   text-decoration: none;
 }
 
