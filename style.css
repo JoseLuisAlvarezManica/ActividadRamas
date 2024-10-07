@@ -1,4 +1,4 @@
-/* Estilos para el cuerpo del documento */
+/*Estilos para el cuerpo del documento */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -91,7 +91,7 @@ footer {
   font-size: 14px;
   width: 100%; /* Hacemos que el footer abarque todo el ancho */
   bottom: 0;
-  position: bottom; 
+  position: fixed; 
 }
 
 footer a {
@@ -145,4 +145,3 @@ header {
     left: 0;
     z-index: 1000;  /* Asegura que esté por encima del contenido */
 }
-

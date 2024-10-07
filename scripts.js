@@ -50,6 +50,7 @@
         document.getElementById('mensaje').textContent = "";
         user.value = "";
         password.value = "";
-        document.getElementById('login').style.display = 'flex';
+        document.getElementById('login').style.display = 'block';
         datacontainer.style.display = 'none';
+        document.querySelector('h1').style.display = 'none';
     }
