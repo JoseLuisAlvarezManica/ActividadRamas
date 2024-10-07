@@ -2,6 +2,7 @@
     const apiURL = 'https://66f4a9ee77b5e889709a1d3f.mockapi.io/tasks';
 
     const datacontainer = document.getElementById('data-container');
+    datacontainer.style.display = 'none';
 
     function getData() {
         fetch(apiURL)
@@ -36,8 +37,19 @@
         // Verifica las credenciales
         if (user === "Moises" && password === "123") {
             document.getElementById('mensaje').textContent = "Bienvenido";  // Limpia el mensaje de error
+            document.getElementById('login').style.display = 'none';
             getData();
+            
         } else {
             document.getElementById('mensaje').textContent = "¿Quién sos?"
         }
+    }
+    function home(){
+        const user = document.getElementById('username');
+        const password = document.getElementById('password');
+        document.getElementById('mensaje').textContent = "";
+        user.value = "";
+        password.value = "";
+        document.getElementById('login').style.display = 'flex';
+        datacontainer.style.display = 'none';
     }

@@ -89,7 +89,8 @@ footer {
   color: #fff;
   font-size: 14px;
   width: 100%; /* Hacemos que el footer abarque todo el ancho */
-  bottom: 0;
+  margin-top: auto;
+  border-top: none;
 }
 
 footer a {
@@ -99,4 +100,38 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #333;
+  padding: 10px;
+  width: 100%; /* Abarca todo el ancho */
+  display: flex;
+  justify-content: center; /* Centra los elementos en la barra */
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0; /* Posición en la parte superior */
+  left: 0; /* Alinea a la izquierda */
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; /* Espaciado entre los enlaces */
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline; /* Subraya al pasar el ratón */
+  color: #4CAF50; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Agrega un margen al contenedor de inicio de sesión para separarlo de la barra de navegación */
+div {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  margin: 100px 0 30px; /* Espacio superior para separar del nav bar */
+  text-align: center;
 }
