@@ -16,7 +16,7 @@ div {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 157px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -91,6 +91,7 @@ footer {
   font-size: 14px;
   width: 100%; /* Hacemos que el footer abarque todo el ancho */
   bottom: 0;
+  position: bottom; 
 }
 
 footer a {
@@ -121,5 +122,27 @@ nav a {
 nav a:hover {
     color: #d645cf;  
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);  
+}
+
+main section {
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+main section h1 {
+    font-family: 'Georgia', serif;  
+    color: #333;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    position: fixed;  /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Asegura que esté por encima del contenido */
 }
 
